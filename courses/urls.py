@@ -9,5 +9,9 @@ urlpatterns = [
 
     url(r'(?P<course_pk>\d+)/q(?P<step_pk>\d+)/$', views.quiz_detail,
         name='quiz'),
+
+    url(r'(?P<course_pk>\d+)/create_quiz/$', views.quiz_create,
+        name='create_quiz'),
+
     url(r'(?P<pk>\d+)/$', views.course_detail, name='detail'),
 ]
